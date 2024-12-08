@@ -1,0 +1,193 @@
+.main-page {
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+  
+    .hero {
+      text-align: center;
+      background-color: aliceblue;
+      padding: 50px 20px;
+      margin-bottom: 30px;
+      font-style: italic;
+
+  
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: black;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      button:hover {
+        background-color: blue;
+      }
+    }
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+    font-size: large;
+  
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login{
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: large;
+      }
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-image {
+  width: 50px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 15px;
+}
+
+.event-title {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.event-date,
+.event-time,
+.event-location {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.event-description {
+  margin-top: 10px;
+  font-size: 0.85em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.event-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.event-button:hover {
+  background-color: #0056b3;
+}
+/* Footer Styling */
+.footer {
+    background-color: #001f5b; /* Dark Blue for contrast */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: #6ec1e4; /* Light blue for links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    margin-top: 10px;
+  }
+  
+  .social-media a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+  }
+  
+  .social-media a img:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+  }
+  

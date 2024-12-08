@@ -1,0 +1,44 @@
+<body >
+<div class="booking-container">
+    <h2 class="booking-title">Book Your Event Tickets</h2>
+  
+    <form (ngSubmit)="onSubmit()">
+      <!-- Event Selection -->
+      <label for="event">Select Event</label>
+      <select id="event" [(ngModel)]="selectedEvent" name="event" (change)="updatePrice()" required>
+        <option value="" disabled selected>Choose an Event</option>
+        <option *ngFor="let event of events" [value]="event" [attr.data-price]="event.price">
+          {{ event.name }} - ${{ event.price }}
+        </option>
+      </select>
+  
+      <!-- Ticket Type -->
+      <label for="ticketType">Select Ticket Type</label>
+      <select id="ticketType" [(ngModel)]="ticketType" name="ticketType" required>
+        <option value="" disabled selected>Choose Ticket Type</option>
+        <option *ngFor="let type of ticketTypes" [value]="type">{{ type }}</option>
+      </select>
+  
+      <!-- Number of Tickets -->
+      <label for="quantity">Number of Tickets</label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        [(ngModel)]="quantity"
+        (input)="updatePrice()"
+        min="1"
+        max="10"
+        required
+      />
+  
+      <!-- Total Price -->
+      <div class="total-price">
+        <strong>Total Price: </strong><span>{{ totalPrice | currency }}</span>
+      </div>
+  
+      <!-- Booking Button -->
+      <button type="submit" class="booking-button" (click)="onBook()">Book Tickets</button>
+    </form>
+  </div>
+  </body>

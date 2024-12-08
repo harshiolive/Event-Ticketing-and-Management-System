@@ -1,0 +1,37 @@
+<div class="browse-events">
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Explore Amazing Events</h1>
+      <p>Find and book tickets for the best events near you</p>
+    </div>
+  
+    <!-- Search and Filter Section -->
+    <div class="filter-bar">
+      <input
+        type="text"
+        placeholder="Search for events..."
+        [(ngModel)]="searchQuery"
+        (input)="filterEvents()"
+      />
+      <select [(ngModel)]="selectedCategory" (change)="filterEvents()">
+        <option value="">All Categories</option>
+        <option value="Music">Music</option>
+        <option value="Technology">Technology</option>
+        <option value="Art">Art</option>
+      </select>
+    </div>
+  
+    <!-- Events List -->
+    <!-- <div id="events" class="event-list">
+      <div class="event-card" *ngFor="let event of filteredEvents">
+        <div class="event-image" [style.backgroundImage]="'url(' + event.image + ')'"></div>
+        <div class="event-details">
+          <h3>{{ event.name }}</h3>
+          <p><strong>Date:</strong> {{ event.date | date: 'longDate' }}</p>
+          <p><strong>Location:</strong> {{ event.location }}</p>
+          <button (click)="viewEvent(event.id)">View Details</button>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  

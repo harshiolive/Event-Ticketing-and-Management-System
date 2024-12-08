@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Subtle light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Payment Container */
+.payment-container {
+  background: linear-gradient(145deg, #ffffff, #e6ebf1); /* Soft gradient */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Elevated card effect */
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for Appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title */
+.payment-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Form Styling */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels */
+.payment-form label {
+  font-size: 0.95rem;
+  color: #34495e;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Inputs and Selects */
+.payment-form input,
+.payment-form select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccd1d9;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Button */
+.payment-button {
+  padding: 12px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #3498db; /* Bright blue */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.02);
+}
+
+.payment-button:active {
+  transform: scale(0.98);
+}
+
+/* Footer Text (Optional) */
+.payment-container footer {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #95a5a6;
+}
